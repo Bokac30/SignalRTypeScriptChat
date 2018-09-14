@@ -3,3 +3,9 @@ bin/
 obj/
 wwwroot/
 *.cache
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
