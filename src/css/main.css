@@ -33,7 +33,6 @@ html, body {
 }
 .message__author {
     border: 1px solid #ccc;
-    background-color: #4800ff;
     color: #fff;
     padding:5px;
     width:20%;

@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bojan.gjorgjievski\\source\\repos\\WebAppSignalRTypeScript\\WebAppSignalRTypeScript\\WebAppSignalRTypeScript.csproj",
+      "projectUniqueName": "C:\\Users\\bojan.gjorgjievski\\source\\repos\\personal\\SignalRTypeScriptChat\\WebAppSignalRTypeScript.csproj",
       "projectName": "WebAppSignalRTypeScript",
-      "projectPath": "C:\\Users\\bojan.gjorgjievski\\source\\repos\\WebAppSignalRTypeScript\\WebAppSignalRTypeScript\\WebAppSignalRTypeScript.csproj",
+      "projectPath": "C:\\Users\\bojan.gjorgjievski\\source\\repos\\personal\\SignalRTypeScriptChat\\WebAppSignalRTypeScript.csproj",
       "packagesPath": "C:\\Users\\bojan.gjorgjievski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bojan.gjorgjievski\\source\\repos\\WebAppSignalRTypeScript\\WebAppSignalRTypeScript\\obj\\",
+      "outputPath": "C:\\Users\\bojan.gjorgjievski\\source\\repos\\personal\\SignalRTypeScriptChat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

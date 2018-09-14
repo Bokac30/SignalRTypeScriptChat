@@ -1,6 +1,17 @@
 ﻿import "./css/main.css";
 import * as signalR from "@aspnet/signalr";
 
+const colors = [ "red", "blue", "green", "orange", "gray", "black" ];
+const min: number = 1;
+const max: number = 7;
+const random = Math.random() * (min - max) + 1;
+const x = Math.round(Math.abs(random));
+console.log(x);
+let selectedColor = colors[x];
+
+const lblColor: HTMLSpanElement = document.querySelector("#lblColor");
+lblColor.innerText = selectedColor;
+
 const divMessages: HTMLDivElement = document.querySelector("#divMessages");
 const tbMessage: HTMLInputElement = document.querySelector("#tbMessage");
 const btnSend: HTMLButtonElement = document.querySelector("#btnSend");
@@ -15,7 +26,7 @@ connection.start().catch(err => document.write(err));
 
 connection.on("messageReceived", (username: string, message: string) => {
     let m = document.createElement("div");
-    m.innerHTML = `<div class="message__author">${username}</div><div class="message__text">${message}</div>`;
+    m.innerHTML = `<div class="message__author" style="background-color: ${selectedColor}">${username}</div><div class="message__text">${message}</div>`;
 
     divMessages.appendChild(m);
     divMessages.scrollTop = divMessages.scrollHeight;
