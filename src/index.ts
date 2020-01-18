@@ -7,7 +7,8 @@ const max:      number = 7;
 const random:   number = Math.random() * (min - max) + 1;
 const x:        number = Math.round(Math.abs(random));
 
-let selectedColor: string = colors[x];
+const otherColor: string = 'gray';
+const selectedColor: string = colors[x];
 
 const lblColor: HTMLSpanElement = document.querySelector("#lblColor");
 lblColor.innerText = selectedColor;
@@ -26,7 +27,8 @@ connection.start().catch(err => document.write(err));
 
 connection.on("messageReceived", (username: string, message: string) => {
     let messageEl = document.createElement("div");
-    messageEl.innerHTML = `<div class="message__author" style="background-color: ${selectedColor}">${username}</div><div class="message__text">${message}</div>`;
+    const color = username === tbUsername.value ? selectedColor : otherColor;
+    messageEl.innerHTML = `<div class="message__author" style="background-color: ${color}">${username}</div><div class="message__text">${message}</div>`;
     divMessages.appendChild(messageEl);
     divMessages.scrollTop = divMessages.scrollHeight;
 });
